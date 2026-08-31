@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "policy": "act",
+  "language_conditioned": false,
+  "task": "First pick up the pink cube and place it in the center target area, then pick up the cyan cube and place it in the center target area.",
+  "pilot": {
+    "dataset_repo_id": "iptihar/so101_pink_cyan_sequence_act_pilot",
+    "layouts": ["L1", "L2", "L3"],
+    "repeats_per_layout": 4,
+    "num_episodes": 12,
+    "schedule_seed": 20260824
+  },
+  "formal": {
+    "dataset_repo_id": "iptihar/so101_pink_cyan_sequence_act_v1",
+    "layouts": ["L1", "L2", "L3", "L4", "L5"],
+    "repeats_per_layout": 10,
+    "num_episodes": 50,
+    "schedule_seed": 20260824
+  },
+  "correction": {
+    "dataset_repo_id": "iptihar/so101_pink_cyan_sequence_act_l1_correction_v1",
+    "layouts": ["L1"],
+    "repeats_per_layout": 3,
+    "num_episodes": 3,
+    "schedule_seed": 20260825
+  },
+  "placement": {
+    "first_target": "C1",
+    "second_target": "C2",
+    "color_binding": false
+  },
+  "training": {
+    "dataset_revision": "v3.0",
+    "video_backend": "pyav",
+    "smoke_steps": 200,
+    "full_steps": 30000,
+    "save_steps": [10000, 20000, 30000],
+    "batch_size_start": 8,
+    "seed": 20260824,
+    "num_workers": 4,
+    "wandb_project": "so101-two-cube-ordering",
+    "wandb_mode": "online",
+    "wandb_disable_artifact": true,
+    "policy_repo_id": "iptihar/act_so101_pink_cyan_sequence_v1",
+    "policy_push_to_hub": false,
+    "smoke_output_dir": "outputs/train/act_two_cube_smoke_200",
+    "full_output_dir": "outputs/train/act_two_cube_30k"
+  }
+}

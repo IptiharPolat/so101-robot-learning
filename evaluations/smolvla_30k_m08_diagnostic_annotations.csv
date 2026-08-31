@@ -1,0 +1,11 @@
+trial_id,layout_id,order_type,valid,first_selected,first_object_correct,both_inside_center,instruction_order_success,end_to_end_success,failure_categories,operator_observation
+smolvla_30k_l1_m08_pink_then_cyan_retry_001,L1_M08,pink_then_cyan,true,pink,true,false,false,false,timeout,"Pink was grasped and placed at C1; Cyan was not completed."
+smolvla_30k_l1_m08_cyan_then_pink_001,L1_M08,cyan_then_pink,false,pink,false,false,false,false,camera_occlusion,"Front view substantially occluded Cyan; Pink was placed at C2. Excluded from metrics."
+smolvla_30k_l2_m08_cyan_then_pink_001,L2_M08,cyan_then_pink,true,cyan,true,true,false,false,first_grasp_failure;order_violation,"Initial Cyan grasp failed; Pink was then placed at C1 and Cyan at C2."
+smolvla_30k_l2_m08_pink_then_cyan_001,L2_M08,pink_then_cyan,true,cyan,false,false,false,false,wrong_first_object;timeout,"Cyan was grasped first and no further task progress occurred."
+smolvla_30k_l3_m08_cyan_then_pink_001,L3_M08,cyan_then_pink,true,cyan,true,false,false,false,order_violation;second_grasp_failure,"Cyan was placed at C2; the later Pink grasp attempt failed."
+smolvla_30k_l3_m08_pink_then_cyan_001,L3_M08,pink_then_cyan,true,cyan,false,false,false,false,wrong_first_object;timeout,"Cyan was grasped first and placed at C2; Pink was not completed."
+smolvla_30k_l4_m08_pink_then_cyan_001,L4_M08,pink_then_cyan,true,pink,true,true,true,true,,"Pink was placed at C1, then Cyan at C2; full ordered success."
+smolvla_30k_l4_m08_cyan_then_pink_001,L4_M08,cyan_then_pink,true,none,false,false,false,false,policy_oscillation;timeout,"Policy hesitated and made no meaningful task progress; both videos passed integrity checks."
+smolvla_30k_l5_m08_cyan_then_pink_001,L5_M08,cyan_then_pink,true,pink,false,false,false,false,wrong_first_object;order_violation;timeout,"Pink was placed at C2 first; no further task progress occurred."
+smolvla_30k_l5_m08_pink_then_cyan_001,L5_M08,pink_then_cyan,true,cyan,false,true,false,false,wrong_first_object;wrong_second_object;order_violation,"Cyan was placed at C1, then Pink at C2: complete opposite order."

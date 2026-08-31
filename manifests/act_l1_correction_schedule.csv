@@ -1,0 +1,4 @@
+episode_id,layout_id,repeat_id,first_color,second_color,task,planned_order,status,accepted,notes
+act_l1_correction_000,L1,1,pink,cyan,"First pick up the pink cube and place it in the center target area, then pick up the cyan cube and place it in the center target area.",1,planned,,Targeted replacement for formal layout imbalance
+act_l1_correction_001,L1,2,pink,cyan,"First pick up the pink cube and place it in the center target area, then pick up the cyan cube and place it in the center target area.",2,planned,,Targeted replacement for formal layout imbalance
+act_l1_correction_002,L1,3,pink,cyan,"First pick up the pink cube and place it in the center target area, then pick up the cyan cube and place it in the center target area.",3,planned,,Targeted replacement for formal layout imbalance

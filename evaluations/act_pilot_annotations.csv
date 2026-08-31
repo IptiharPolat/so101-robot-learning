@@ -1,0 +1,13 @@
+episode_id,layout_id,repeat_id,sequence_complete,pink_first,pink_released_before_cyan,cyan_grasped_after_pink,both_inside_center,c1_c2_clear,front_video_usable,side_video_usable,colors_clear,no_video_fault,task_exact,state_action_valid,two_gripper_cycles,no_excessive_pause,strategy_consistent,duration_sufficient,no_collision_or_workspace_issue,failure_category,notes
+act_pilot_000,L1,3,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,,45.57s; operator accepted; representative front/side frames and action trace checked
+act_pilot_001,L2,4,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,,38.10s; operator accepted; representative front/side frames and action trace checked
+act_pilot_002,L2,2,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,,35.20s; operator accepted; representative front/side frames and action trace checked
+act_pilot_003,L3,2,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,,40.30s; first take discarded; rerecord operator accepted and checked
+act_pilot_004,L3,3,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,,31.63s; operator accepted; representative front/side frames and action trace checked
+act_pilot_005,L1,1,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,,29.77s; operator accepted; representative front/side frames and action trace checked
+act_pilot_006,L2,1,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,,31.97s; operator accepted; representative front/side frames and action trace checked
+act_pilot_007,L3,4,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,,31.00s; operator accepted; representative front/side frames and action trace checked
+act_pilot_008,L1,2,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,,27.73s; operator accepted; representative front/side frames and action trace checked
+act_pilot_009,L3,1,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,,25.33s; operator accepted; representative front/side frames and action trace checked
+act_pilot_010,L1,4,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,,25.47s; operator accepted; representative front/side frames and action trace checked
+act_pilot_011,L2,3,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,,23.07s; operator accepted; representative front/side frames and action trace checked

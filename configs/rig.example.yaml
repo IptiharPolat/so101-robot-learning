@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "conda_env": "so101-ordering",
+  "lerobot_checkout": "/path/to/lerobot",
+  "robot": {
+    "type": "so101_follower",
+    "port": null,
+    "id": "my_awesome_follower_arm",
+    "calibration_file": "/path/to/calibration/robots/so_follower/follower_arm.json",
+    "max_relative_target": null
+  },
+  "teleop": {
+    "type": "so101_leader",
+    "port": null,
+    "id": "my_awesome_leader_arm",
+    "calibration_file": "/path/to/calibration/teleoperators/so_leader/leader_arm.json"
+  },
+  "cameras": {
+    "front": {
+      "type": "opencv",
+      "index_or_path": null,
+      "historical_candidate": 2,
+      "width": 640,
+      "height": 480,
+      "fps": 30,
+      "fourcc": "MJPG"
+    },
+    "side": {
+      "type": "opencv",
+      "index_or_path": null,
+      "historical_candidate": 4,
+      "width": 640,
+      "height": 480,
+      "fps": 30,
+      "fourcc": "MJPG"
+    }
+  },
+  "workspace_mapping": {
+    "width_mm": null,
+    "depth_mm": null,
+    "origin": "center of NL-NR-FL-FR candidate safe-workspace markers",
+    "measurement_status": "unresolved"
+  },
+  "recording": {
+    "display_data": true,
+    "push_to_hub": false,
+    "private": true,
+    "dataset_roots": {
+      "pilot": "outputs/datasets/act_pilot",
+      "formal_raw": "outputs/datasets/act_formal_v1",
+      "formal": "outputs/datasets/act_formal_balanced_v1",
+      "correction": "outputs/datasets/act_l1_correction_v1",
+      "vla": {
+        "pink_then_cyan": "outputs/datasets/vla_pink_then_cyan_v1",
+        "cyan_then_pink": "outputs/datasets/vla_cyan_then_pink_v1"
+      }
+    },
+    "episode_time_s": 120,
+    "reset_time_s": 30,
+    "fps": 30,
+    "vcodec": "h264"
+  }
+}

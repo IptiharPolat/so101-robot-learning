@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "policy": {
+    "repo_id": "iptihar/act_so101_pink_cyan_sequence_v1",
+    "revision": "d5d6fa1afa56b928808091306b2edcc7d01c200b",
+    "weight_sha256": "dc2900eed6e179c143f817cf051efe41843f82d87b5ecd418e2fca8fef558d01",
+    "device": "cuda"
+  },
+  "single_trial": {
+    "evaluation_id": "ACT30K-L1-001",
+    "layout_id": "L1",
+    "seen_layout": true,
+    "dataset_repo_id": "iptihar/eval_act_so101_pink_cyan_sequence_30k_single_v1",
+    "dataset_root": "outputs/evaluations/act_30k_single_trial_l1_001",
+    "num_episodes": 1,
+    "episode_time_s": 120,
+    "reset_time_s": 10,
+    "push_to_hub": false,
+    "private": true
+  }
+}

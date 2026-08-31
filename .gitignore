@@ -1,0 +1,59 @@
+# Local rig details and credentials
+configs/rig.local.yaml
+.env
+*.token
+.netrc
+
+# Datasets, caches, checkpoints, and generated media
+data/
+outputs/*
+!outputs/.gitkeep
+checkpoints/
+wandb/
+.cache/
+.runtime/
+models/
+*.safetensors
+*.pt
+*.pth
+*.mp4
+*.avi
+*.mkv
+
+# Local handoff/session material is not part of the public project
+AGENTS.md
+CHAT_TRANSCRIPT.md
+PROGRESS.md
+PROJECT_PLAN.md
+RESUME.md
+scripts/export_codex_chat.py
+
+# Machine-specific environment snapshots
+reports/*environment*.yml
+reports/*pip_freeze*.txt
+reports/pip_freeze.txt
+
+# Publish a curated evidence set rather than every internal diagnostic artifact
+reports/*
+!reports/act_formal_qc.md
+!reports/act_full_training.md
+!reports/act_l5_temporal_trial_001.md
+!reports/act_temporal_diagnostic_trial.md
+!reports/github_release_plan.md
+!reports/policy_comparison.md
+!reports/smolvla_recovery20k_offline_diagnostic.md
+!reports/smolvla_recovery_checkpoint_selection.md
+!reports/smolvla_recovery_v2_dataset_qc.md
+!reports/smolvla_recovery_v2_smoke_training.md
+!reports/vla_dataset_pairing_qc.md
+
+# Python/editor artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.vscode/
+.idea/
+
+# Generated local snapshots beyond the committed audit baseline
+reports/run_snapshots/

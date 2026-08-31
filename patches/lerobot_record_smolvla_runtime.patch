@@ -1,0 +1,26 @@
+diff --git a/src/lerobot/scripts/lerobot_record.py b/src/lerobot/scripts/lerobot_record.py
+index 0b39e6f..0000000 100644
+--- a/src/lerobot/scripts/lerobot_record.py
++++ b/src/lerobot/scripts/lerobot_record.py
+@@ -387,7 +387,7 @@ def record_loop(
+         _sent_action = robot.send_action(robot_action_to_send)
+ 
+         # Write to dataset
+         if dataset is not None:
+-            action_frame = build_dataset_frame(dataset.features, action_values, prefix=ACTION)
++            action_frame = build_dataset_frame(dataset.features, _sent_action, prefix=ACTION)
+             frame = {**observation_frame, **action_frame, "task": single_task}
+             dataset.add_frame(frame)
+@@ -470,7 +470,11 @@ def record(cfg: RecordConfig) -> LeRobotDataset:
+             )
+ 
+         # Load pretrained policy
+-        policy = None if cfg.policy is None else make_policy(cfg.policy, ds_meta=dataset.meta)
++        policy = (
++            None
++            if cfg.policy is None
++            else make_policy(cfg.policy, ds_meta=dataset.meta, rename_map=cfg.dataset.rename_map)
++        )
+         preprocessor = None
+         postprocessor = None
+         if cfg.policy is not None:

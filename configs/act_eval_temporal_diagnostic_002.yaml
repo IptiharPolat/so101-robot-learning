@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "policy": {
+    "repo_id": "iptihar/act_so101_pink_cyan_sequence_v1",
+    "revision": "d5d6fa1afa56b928808091306b2edcc7d01c200b",
+    "weight_sha256": "dc2900eed6e179c143f817cf051efe41843f82d87b5ecd418e2fca8fef558d01",
+    "device": "cuda",
+    "use_amp": true,
+    "n_action_steps": 1,
+    "temporal_ensemble_coeff": 0.01
+  },
+  "single_trial": {
+    "evaluation_id": "ACT30K-L1-TEMPORAL-002",
+    "layout_id": "L1",
+    "seen_layout": true,
+    "dataset_repo_id": "iptihar/eval_act_so101_pink_cyan_sequence_30k_temporal_diag_002",
+    "dataset_root": "outputs/evaluations/act_30k_l1_temporal_diag_002",
+    "num_episodes": 1,
+    "control_fps": 25,
+    "episode_time_s": 120,
+    "reset_time_s": 10,
+    "push_to_hub": false,
+    "private": true,
+    "hardware_gate": "PASS",
+    "execution_authorization_env": "SO101_ACT_25HZ_DIAGNOSTIC_002_APPROVED"
+  }
+}

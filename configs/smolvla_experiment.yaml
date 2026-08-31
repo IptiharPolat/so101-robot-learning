@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "policy": "smolvla",
+  "pretrained_model": "lerobot/smolvla_base",
+  "language_conditioned": true,
+  "tasks": {
+    "pink_then_cyan": "First pick up the pink cube and place it in the center target area, then pick up the cyan cube and place it in the center target area.",
+    "cyan_then_pink": "First pick up the cyan cube and place it in the center target area, then pick up the pink cube and place it in the center target area."
+  },
+  "datasets": {
+    "pink_then_cyan": "iptihar/so101_vla_pink_then_cyan_v1",
+    "cyan_then_pink": "iptihar/so101_vla_cyan_then_pink_v1",
+    "merged_raw": "iptihar/so101_vla_pink_cyan_order_v1",
+    "merged": "iptihar/so101_vla_pink_cyan_order_clean_v1",
+    "local_merged_root": "outputs/datasets/vla_pink_cyan_order_clean_v1"
+  },
+  "pairing": {
+    "layouts": ["L1", "L2", "L3", "L4", "L5"],
+    "repeats_per_layout_and_order": 10,
+    "strict_pairing": true,
+    "schedule_seed": 20260824
+  },
+  "collection": {
+    "manifest": "manifests/vla_episode_schedule.csv",
+    "coverage_manifest": "manifests/vla_workspace_coverage.csv",
+    "episodes_per_order": 50,
+    "episodes_per_invocation": 1,
+    "interleave_strict_pairs": true,
+    "upload_during_collection": false
+  },
+  "training": {
+    "smoke_steps": 200,
+    "full_steps": 30000,
+    "save_steps": [5000, 10000, 15000, 20000, 25000, 30000],
+    "batch_size_candidates": [4, 8],
+    "selected_batch_size": 8,
+    "seed": 20260824
+  }
+}
