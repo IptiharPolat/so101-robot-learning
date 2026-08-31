@@ -48,7 +48,7 @@ broader public name without renaming this directory.
 
 | Asset | Size | Duration |
 |---|---:|---:|
-| ACT fixed-order success | 3.94 MB | 13.01 s |
+| ACT single-cube grasp | 4.83 MB | 14.62 s |
 | SmolVLA Pink -> Cyan | 5.13 MB | 16.88 s |
 | SmolVLA Cyan -> Pink | 6.25 MB | 20.88 s |
 | Total | 15.32 MB | 50.77 s |

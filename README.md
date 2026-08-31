@@ -12,9 +12,9 @@ task.
 
 ## Real-robot demos
 
-| ACT fixed Pink -> Cyan | SmolVLA 20K Pink -> Cyan | SmolVLA 20K Cyan -> Pink |
+| ACT single-cube grasp | SmolVLA 20K Pink -> Cyan | SmolVLA 20K Cyan -> Pink |
 |---|---|---|
-| ![ACT fixed-order success](media/act_fixed_order_success.gif) | ![SmolVLA Pink then Cyan](media/smolvla_20k_pink_then_cyan.gif) | ![SmolVLA Cyan then Pink](media/smolvla_20k_cyan_then_pink.gif) |
+| ![ACT single-cube grasp](media/act_single_cube_success.gif) | ![SmolVLA Pink then Cyan](media/smolvla_20k_pink_then_cyan.gif) | ![SmolVLA Cyan then Pink](media/smolvla_20k_cyan_then_pink.gif) |
 
 The GIFs are front-camera excerpts accelerated for presentation. Exact source
 trials, trims, speed factors, and interpretation limits are recorded in
