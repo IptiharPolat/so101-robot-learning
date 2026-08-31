@@ -12,7 +12,7 @@ task.
 
 ## Real-robot demos
 
-| ACT fixed Pink -> Cyan | SmolVLA 20K Pink -> Cyan | SmolVLA 20K Cyan -> Pink |
+| ACT fixed Pink -> Cyan | SmolVLA Pink -> Cyan | SmolVLA Cyan -> Pink |
 |---|---|---|
 | ![ACT fixed-order success](media/act_fixed_order_success.gif) | ![SmolVLA Pink then Cyan](media/smolvla_20k_pink_then_cyan.gif) | ![SmolVLA Cyan then Pink](media/smolvla_20k_cyan_then_pink.gif) |
 
