@@ -48,10 +48,10 @@ broader public name without renaming this directory.
 
 | Asset | Size | Duration |
 |---|---:|---:|
-| ACT single-cube grasp | 4.83 MB | 14.62 s |
+| ACT single-cube grasp | 4.95 MB | 14.75 s |
 | SmolVLA Pink -> Cyan | 5.13 MB | 16.88 s |
-| SmolVLA Cyan -> Pink | 6.25 MB | 20.88 s |
-| Total | 15.32 MB | 50.77 s |
+| SmolVLA Cyan -> Pink | 6.86 MB | 19.62 s |
+| Total | 16.94 MB | 51.25 s |
 
 This is small enough for a normal GitHub repository and avoids Git LFS for the
 public preview assets.
